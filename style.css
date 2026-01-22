@@ -23,9 +23,10 @@
    body {
     display: flex;
     justify-content: flex-start;
-    margin: 10;
+      margin: 10;
     padding: 0;
     width: 100%;
+    height: max-content;
   
    }
    .header {
@@ -85,4 +86,16 @@ background-color: #F8F8F8;
 width: 100%;
 height: 100%;
 
+}
+.text-expand {
+  display: none;
+  padding: 12px 0;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+.read {
+   width: 32px;
+  cursor: pointer;
+margin: 10px;
 }
