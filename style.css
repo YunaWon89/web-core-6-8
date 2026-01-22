@@ -1,5 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display&display=swap');
-body {
-  font-family: "Old Standard TT", serif;
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('TTLakes-Regular.eot');
+    src: url('TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Regular.woff') format('woff'),
+    url('TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'TT Lakes Bold';
+    src: url('TTLakes-Bold.eot');
+    src: url('TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('TTLakes-Bold.woff') format('woff'),
+    url('TTLakes-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+   * {
+    box-sizing: border-box;
+   }
+   body {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10;
+    padding: 0;
+    width: 100%;
+   }
+   .header {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+   }
+   
+#burger-toggle {
+  display: none;
 }
- 
+.burger-btn {
+  width: 32px;
+  cursor: pointer;
+}
+.burger-btn img {
+ display: flex;
+}
+.burger-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: none;
+  flex-direction: column;
+  padding: 16px;
+}
+.burger-menu a {
+  padding: 12px 0;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+#burger-toggle:checked ~ .burger-menu {
+  display: flex;
+}
+.repair {
+  cursor: pointer;
+}
+.checkstatus {
+  cursor: pointer;
+}
+.services {
+  
+}
