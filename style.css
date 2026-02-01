@@ -30,7 +30,9 @@
    }
    .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
     gap: 20px;
    }
    
@@ -65,19 +67,24 @@
 }
 .call{
   cursor: pointer;
+  display: none;
 }
 .profile{
   cursor: pointer;
+  display: none;
 }
 .chat{
   cursor: pointer;
+  display: none;
 }
 
 .repair {
   cursor: pointer;
+ 
 }
 .checkstatus {
   cursor: pointer;
+
 }
 .main {
 background-color: #F8F8F8;
@@ -131,4 +138,43 @@ h2{
 }
 h5{
   font-size: 20px;
+}
+.more{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.more__icon{
+  display: inline-block;
+}
+@keyframes bounceDown {
+  0% {transform: translateY(0);}
+  30% {transform: translateY(6px);}
+  60% {transform: translateY(0);}
+  80% {transform: translateY(3px);}
+  100% {transform: translateY(0);}
+}
+.more:hover .more__icon {
+  animation: bounceDown 0.5s ease-in-out infinite;
+}
+@media (min-width: 768px) {
+  .call{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.profile{
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+.chat{
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+}
+@media (min-width:1120px) {
+
 }
