@@ -23,11 +23,10 @@
    body {
     display: flex;
     justify-content: flex-start;
-      margin: 10;
+    margin: 10;
     padding: 0;
-    width: 100%;
-    height: max-content;
   
+
    }
    .header {
     display: flex;
@@ -73,9 +72,7 @@
 .chat{
   cursor: pointer;
 }
-span{
 
-}
 .repair {
   cursor: pointer;
 }
@@ -86,23 +83,52 @@ span{
 background-color: #F8F8F8;
 width: 100%;
 height: 100%;
+
 }
-.list {
+ul{
+  list-style-type:none;
   display: flex;
-  justify-content: flex-start;
- flex-direction: row;
-  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #FFFFFF;
+flex-wrap: wrap;
+border-color: #B8FFEC;
+gap: 20px;
 }
+
 .text-expand {
-  display: none;
+  display: ;
   padding: 12px 0;
   text-decoration: none;
   color: black;
   border-bottom: 1px solid #eee;
+  font-size: 20px;
 }
 .read {
    width: 32px;
   cursor: pointer;
 margin: 10px;
 display: flex;
+}
+.picture{
+display: flex;
+justify-content: center;
+align-items: center;
+  margin: 20px;
+  width: 531px;
+  height: 383px;
+}
+h2{
+  display: flex;
+ justify-content: flex-start;
+ border-left: 3px solid #41F6D7;
+ font-size: 28px;
+}
+h5{
+  font-size: 20px;
 }
