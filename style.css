@@ -180,11 +180,11 @@ overflow-y: hidden;
   flex-direction: row;
   align-items: flex-start;
 }
-.service__text {
-  flex: 1;
-}
+
 .service__picture {
-  flex: 1;
+display: flex;
+justify-content: flex-end;
+width: 70%;
 }
 .service__picture img {
   width: 50%;
